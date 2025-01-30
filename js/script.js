@@ -192,7 +192,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(238, 121, 189, ${thirdOpacity})`;
-        context.fillText("Happy Birthday buat sayangnya aku <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Happy Birthday buat sayangnya aku <3","abis klik tombol dibawah pencet lagi layarnya ya", "kita mainin kembang api!", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
