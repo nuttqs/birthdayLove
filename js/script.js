@@ -182,9 +182,9 @@ function drawText() {
 
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Semoga apa yang kamu semogakan tercapai yaa!,", "sentuh lagi layarnya abis click me ya.", "kita mainin kembang api!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks(["Semoga apa yang kamu semogakan tercapai yaa!,", "sentuh lagi layarnya abis click me ya."], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("Semoga apa yang kamu semogakan tercapai yaa!, sentuh lagi layarnya abis click me ya. kita mainin kembang api!", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("Semoga apa yang kamu semogakan tercapai yaa!, sentuh lagi layarnya abis click me ya.", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
