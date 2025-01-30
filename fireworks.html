@@ -19,8 +19,8 @@
 	</head>
 
 	<body>
-		<audio loop autoplay>
-			<source src="music.mp3" type="audio/mp3"/>
+		<audio id="bg-music" loop>
+    			<source src="music.mp3" type="audio/mp3">
 		</audio>
 		<div style="position:relative">
 			<div style="position:absolute;left:0;top:0">
@@ -58,11 +58,12 @@
 
 		</div>
 		<script>
-			document.getElementById('play-music').addEventListener('click', function() {
+			document.addEventListener('click', function() {
 				let audio = document.getElementById('bg-music');
-				audio.play();
-				this.style.display = 'none'; // Hide Button
-			});
+			        if (audio.paused) {
+			            audio.play().catch(error => console.log("Gagal autoplay:", error));
+			        }
+			}, { once: true }); // Hanya berjalan sekali
 		</script>
 		<script type="text/javascript">
 			var offsetX = $("#loveHeart").width() / 2;
