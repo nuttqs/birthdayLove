@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <audio loop autoplay>
-        <source src="instrument.mp3" type="audio/mp3"/>
-    </audio>
+	<audio id="bg-music" loop>
+	    <source src="instrument.mp3" type="audio/mp3">
+	</audio>
     <canvas id="starfield"></canvas>
     <a href="fireworks.html" id="valentinesButton">Click Me! ❤</a>
     <script>
-        document.getElementById('play-music').addEventListener('click', function() {
-			let audio = document.getElementById('bg-music');
-			audio.play();
-			this.style.display = 'none'; // Hide Button
-		});
+	    document.addEventListener('click', function() {
+	        let audio = document.getElementById('bg-music');
+	        if (audio.paused) {
+	            audio.play().catch(error => console.log("Gagal autoplay:", error));
+	        }
+	    }, { once: true }); // Hanya berjalan sekali
     </script>
     <script src="js/script.js"></script>
 </body>
