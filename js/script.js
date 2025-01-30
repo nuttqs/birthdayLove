@@ -71,13 +71,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(238, 121, 189, ${opacity})`;
-        context.fillText("Hallo Sayaaaang!", canvas.width/2, canvas.height/2);
+        context.fillText("Hallo Sayaaaang!", "sentuh layarnya ya"canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(238, 121, 189, ${opacity})`;
-        context.fillText("Hallo Sayaaaang!", canvas.width/2, canvas.height/2);
+        context.fillText("Hallo Sayaaaang!", "sentuh layarnya ya"canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
