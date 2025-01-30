@@ -71,13 +71,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(238, 121, 189, ${opacity})`;
-        context.fillText("Halo sayaaang!", "sentuh layarnya ya", canvas.width/2, canvas.height/2);
+        context.fillText("Halo sayaaang! sentuh layarnya ya", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(238, 121, 189, ${opacity})`;
-        context.fillText("Halo sayaaang!", "sentuh layarnya ya", canvas.width/2, canvas.height/2);
+        context.fillText("Halo sayaaang! sentuh layarnya ya", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -182,9 +182,9 @@ function drawText() {
 
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["bisa terwujud dan tercapai ya sayang,","semua impian kamu."], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks(["Semoga yang kamu semogakan tercapai yaa,", "sentuh lagi layarnya abis click me ya.", "kita main kembang api!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("bisa terwujud dan tercapai ya sayang, semua impian kamu.", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("Semoga yang kamu semogakan tercapai yaa, sentuh lagi layarnya abis click me ya. kita main kembang api!", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
@@ -192,7 +192,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(238, 121, 189, ${thirdOpacity})`;
-        context.fillText("Happy Birthday buat sayangnya aku <3","abis klik tombol dibawah pencet lagi layarnya ya", "kita mainin kembang api!", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Happy Birthday sayangnya aku <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
